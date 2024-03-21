@@ -1,0 +1,22 @@
+dateModified: 1711051184
+email:
+  fromEmail: codingwithkyle@gmail.com
+  fromName: 'API Docs'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    48d1c729-c86d-46d1-bc0b-89ded083238b: 'API Docs' # API Docs
+    342be9bc-3d31-4bbd-9df5-2b9c9a421c77: 'API Docs' # API Docs
+    43074a37-f4ec-4832-be0a-ad3c54463f59: Common # Common
+system:
+  edition: solo
+  live: true
+  name: 'API Docs'
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
