@@ -49,7 +49,15 @@
                 {% endif %}
             {% endfor %}
         </nav>
-        <header>Header</header>
+        <header>
+            <button class="search" flex="row nowrap items-center justify-between">
+                <div class="h-full" flex="row nowrap items-center">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                    <span class="font-sm">Find something...</span>
+                </div>
+                <span class="font-grey-500 font-xs">Ctrl K</span>
+            </button>
+        </header>
         <main>
             <div style="z-index:-1;position: absolute; left: 50%; top: -12rem; height: 25rem; width: 81.25rem; transform: translateX(-50%);">
                 <div style="position: absolute; inset: 0; background-image: linear-gradient(white, transparent); opacity: 0.4; mask-image: radial-gradient(farthest-side at top, white, transparent); background-image: linear-gradient(to right, #36b49f, #DBFF75); opacity: 0.4; mask-image: radial-gradient(farthest-side at top, white, transparent);">

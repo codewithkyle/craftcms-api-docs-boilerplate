@@ -25,6 +25,31 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 2rem;
+
+        & .search {
+            background-color: hsl(var(--white-hsl) / 0.05);
+            border: 1px solid hsl(var(--grey-200-hsl) / 0.1);
+            height: 32px;
+            border-radius: 1rem;
+            padding: 0 0.75rem;
+            color: var(--grey-400);
+            width: 420px;
+            line-height: 1;
+            transition: border-color 0.15s ease-in-out;
+
+            &:hover,
+            &:focus-visible {
+                border-color: hsl(var(--grey-200-hsl) / 0.2);
+            }
+
+            svg {
+                width: 14px;
+                height: 14px;
+                margin-right: 0.75rem;
+                display: inline-block;
+            }
+        }
     }
 
     & nav {
