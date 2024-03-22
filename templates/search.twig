@@ -1,0 +1,12 @@
+{% set query = craft.app.request.getParam('q') %}
+{% set hits = craft.meilisearch.search(query) %}
+{% if hits|length %}
+    {% for hit in hits %}
+        <a href="{{ hit.url }}">
+            <span class="title">{{ hit.title }}</span>
+            <span class="location">{{ hit.nav }}</span>
+        </a>
+    {% endfor %}
+{% else %}
+    <p>Nothing found for&nbsp;<span class="font-white">'{{query}}'</span>. Please try again</p>
+{% endif %}

@@ -21,7 +21,8 @@
  */
 
 use craft\helpers\App;
+use modules\app\App as AppAlias;
 
 return [
-    'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
+    'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS', 'modules' => ['app' => AppAlias::class], 'bootstrap' => ['app'],
 ];

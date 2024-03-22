@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="/css/code.css" />
         <link rel="stylesheet" href="/css/attr-list.css" />
         <link rel="stylesheet" href="/css/method-chip.css" />
+        <link rel="stylesheet" href="/css/search.css" />
 
         <style>
             :root {
@@ -57,7 +58,7 @@
             });
 
             function highlightSourceCode() {
-                document.body.querySelectorAll('source-code').forEach(async (block) => {
+                document.body.querySelectorAll('source-code:not(.is-visible)').forEach(async (block) => {
                     const lang = block.getAttribute('lang');
                     if (lang !== null){
                         block.innerHTML = highlighter.codeToHtml(block.innerHTML, {
@@ -109,7 +110,12 @@
             {% endfor %}
         </nav>
         <header>
-            <button class="search" flex="row nowrap items-center justify-between">
+            <button 
+                x-data=""
+                x-on:click.stop="$dispatch('search')"
+                class="search" 
+                flex="row nowrap items-center justify-between"
+            >
                 <div class="h-full" flex="row nowrap items-center">
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
                     <span class="font-sm">Find something...</span>
@@ -145,5 +151,32 @@
             </div>
             {% block content %}{% endblock %}
         </main>
+        <search-modal
+            x-data="{ open: false }"
+            x-on:keydown.window.escape="open = false"
+            x-on:keydown.window.ctrl.k.prevent.stop="open = true; setTimeout(() => $refs.input.focus(), 100);"
+            x-on:search.window="open = true; setTimeout(() => $refs.input.focus(), 100);"
+            :class="{ 'show': open }"
+        >
+            <search-container>
+                <search-input
+                    x-on:click.away="open = false"
+                >
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                    <input 
+                        type="text" 
+                        placeholder="Find something..."
+                        autocomplete="off"
+                        name="q"
+                        hx-get="/search"
+                        hx-trigger="keyup changed delay:150ms"
+                        hx-target="search-results"
+                        hx-swap="innerHTML"
+                        x-ref="input"
+                    >
+                    <search-results></search-results>
+                </search-input>
+            </search-container>
+        </search-modal>
     </body>
 </html>
