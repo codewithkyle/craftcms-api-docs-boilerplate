@@ -1,0 +1,68 @@
+columnSuffix: ijixsuua
+contentColumnType: string(6)
+fieldGroup: 43074a37-f4ec-4832-be0a-ad3c54463f59 # Common
+handle: method
+instructions: null
+name: Method
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - GET
+        -
+          - value
+          - get
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - POST
+        -
+          - value
+          - post
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - PUT
+        -
+          - value
+          - put
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - PATCH
+        -
+          - value
+          - patch
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - DELETE
+        -
+          - value
+          - delete
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

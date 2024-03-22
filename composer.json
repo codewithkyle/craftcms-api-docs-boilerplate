@@ -2,6 +2,7 @@
   "require": {
     "craftcms/ckeditor": "^3.8",
     "craftcms/cms": "^4.4.0",
+    "vaersaagod/matrixmate": "^2.1",
     "verbb/super-table": "^3.0",
     "vlucas/phpdotenv": "^5.4.0"
   },

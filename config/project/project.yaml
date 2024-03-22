@@ -1,4 +1,4 @@
-dateModified: 1711066454
+dateModified: 1711067081
 elementSources:
   craft\elements\Entry:
     -
@@ -53,6 +53,7 @@ meta:
   __names__:
     0a5a1671-34f4-454d-ba37-7d78f64878f2: Default # Default
     0c48af99-98cb-45a8-ad43-8c4ef573bf95: Copy # Copy
+    0f7cb40f-6787-4404-bcb2-7f95ac9a7ef7: 'Attribute Name' # Attribute Name
     00f96a90-97e5-4fc2-840b-7ba41b0e961f: Default # Default
     1e3692f5-bd58-4159-bdf7-a6a8dc72297a: Default # Default
     2a76d3d5-243e-45d4-b0e8-0eeebcad8071: Method # Method
@@ -62,12 +63,14 @@ meta:
     3f6a94d7-65f7-4920-a1b0-c9547b69d058: Size # Size
     4ae43450-5bb3-45ec-ac20-3c7ce959e4c8: Pages # Pages
     4d47407e-1323-4801-9555-13aff3d103c3: Code # Code
+    5a0ce0ae-4e46-44ea-bfa9-13daec1197f7: 'Quick Attribute List' # Quick Attribute List
     6c3a98f5-afa2-44f6-8c21-b5592ccabcaf: Heading # Heading
     6e6fa4a9-95b2-4046-83e7-45112f9100ef: 'Content Builder' # Content Builder
     6e261858-b029-44bf-9126-30c95b07c345: Default # Default
     6f75b70b-707b-4336-878b-38d71e7622a2: 'Info Bubble' # Info Bubble
     8bb41c00-83d8-462d-8dcf-20d29ae8d103: Line # Line
     9cc44862-caaf-4422-a3aa-6c5152b04f68: Introduction # Introduction
+    43f5030a-2a17-47fc-aa73-f69590cbcbb6: Nullable # Nullable
     48d1c729-c86d-46d1-bc0b-89ded083238b: 'API Docs' # API Docs
     57ea729e-f774-4839-b91f-25e177e8491d: Navigation # Navigation
     68ad52be-0e32-4692-8fd0-aea664b34e56: Response # Response
@@ -84,6 +87,7 @@ meta:
     766c14db-4949-4dca-b33e-d65c21df14b8: Request # Request
     808cb1eb-e6ac-4814-b74c-5a88f2c744c0: Document # Document
     6994a009-5803-49ca-82a6-14950e385398: Copy # Copy
+    08535bb1-52ce-4d27-9908-aa5bc8555b1f: Description # Description
     43074a37-f4ec-4832-be0a-ad3c54463f59: Common # Common
     53286e64-7dcd-43e3-9291-490bfb17e03e: Endpoint # Endpoint
     300641b7-dbf8-441b-bab6-25e8dafbc1ce: Label # Label
@@ -93,11 +97,14 @@ meta:
     ad14ea4f-2b83-4e1e-b17f-5d5f623a7203: Endpoint # Endpoint
     b34ab1f0-ed3b-43b4-ab29-26e2cda48b8d: Attributes # Attributes
     bdd28828-58d6-451a-a51b-9d39dfdae491: Route # Route
+    c4cc8873-9931-4003-ae88-313a02628139: Attributes # Attributes
     c8a5fe09-5f30-4340-a00e-dbdc8bdd35d0: Spacer # Spacer
     d4b56bed-46c0-4a26-b619-c4ced7149e05: Link # Link
     d4c91da5-7fb0-46c8-94c1-43276587afc1: Attributes # Attributes
     d16ffa2e-4488-42f2-8dfb-f3b2489144c7: Model # Model
     d599dc56-2ff5-4ff4-a4a5-2e4d68eaa6be: Parameters # Parameters
+    dae6d34d-9d8e-405c-9bae-828a53bfaae3: Required # Required
+    db573abc-435e-4936-bc53-6a2c534407cf: 'Attribute Type' # Attribute Type
     dc0960af-d86a-44b3-b733-5f36d85aaf7a: Source # Source
     e6c9568f-4e6b-439c-a4d5-de411bc279eb: 'Rich Text' # Rich Text
     e82ee02b-f803-413b-ab3b-47c6358b6987: Language # Language
@@ -118,6 +125,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
+  matrixmate:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   super-table:
     edition: standard
     enabled: true

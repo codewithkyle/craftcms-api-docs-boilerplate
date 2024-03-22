@@ -1,0 +1,25 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 43074a37-f4ec-4832-be0a-ad3c54463f59 # Common
+handle: document
+instructions: null
+name: Document
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: 1
+  selectionLabel: 'Link a Page'
+  showSiteMenu: false
+  sources:
+    - 'section:4ae43450-5bb3-45ec-ac20-3c7ce959e4c8' # Pages
+    - singles
+  targetSiteId: null
+  validateRelatedElements: true
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

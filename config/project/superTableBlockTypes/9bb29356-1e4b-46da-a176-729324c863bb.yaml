@@ -1,0 +1,167 @@
+changedFieldIndicator: 299636160
+field: c4cc8873-9931-4003-ae88-313a02628139 # Attributes
+fieldLayouts:
+  323bd9b8-4b67-4139-9466-185a4eb318f8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0f7cb40f-6787-4404-bcb2-7f95ac9a7ef7 # Attribute Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5332952e-0aaf-440b-9dad-929b36570750
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 08535bb1-52ce-4d27-9908-aa5bc8555b1f # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 321340d6-ee0d-4506-aebd-971d1316ee6d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: db573abc-435e-4936-bc53-6a2c534407cf # Attribute Type
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6642d957-f27d-4429-9eda-ad5d8c22cb85
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 43f5030a-2a17-47fc-aa73-f69590cbcbb6 # Nullable
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b2adbbc6-1e38-409e-9054-3ae922dc3fd3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: dae6d34d-9d8e-405c-9bae-828a53bfaae3 # Required
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83b616da-d218-4abb-8340-dfea4e46a9da
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7f795b9a-ab85-4f56-84ad-7ff2b55c99d7
+        userCondition: null
+fields:
+  0f7cb40f-6787-4404-bcb2-7f95ac9a7ef7: # Attribute Name
+    columnSuffix: aklmlipx
+    contentColumnType: text
+    fieldGroup: null
+    handle: attrName
+    instructions: null
+    name: 'Attribute Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: true
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  43f5030a-2a17-47fc-aa73-f69590cbcbb6: # Nullable
+    columnSuffix: kziitldf
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: isNullable
+    instructions: null
+    name: Nullable
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  08535bb1-52ce-4d27-9908-aa5bc8555b1f: # Description
+    columnSuffix: fozzprrl
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: null
+    name: Description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 2
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  dae6d34d-9d8e-405c-9bae-828a53bfaae3: # Required
+    columnSuffix: tjjpqwbw
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: isRequired
+    instructions: null
+    name: Required
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  db573abc-435e-4936-bc53-6a2c534407cf: # Attribute Type
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: attrType
+    instructions: null
+    name: 'Attribute Type'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      selectionLabel: null
+      showSiteMenu: true
+      sources:
+        - 'section:3c1ffc2c-34c0-445d-b181-60d4ea2082e8' # Data Types
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries

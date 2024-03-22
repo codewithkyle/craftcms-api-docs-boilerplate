@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "129d6ca2b7111e2ec9c33e9a5dddfbc3",
+    "content-hash": "0af3da7963091715009781d4b655c218",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -5803,6 +5803,67 @@
                 }
             ],
             "time": "2023-11-21T18:54:41+00:00"
+        },
+        {
+            "name": "vaersaagod/matrixmate",
+            "version": "2.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vaersaagod/matrixmate.git",
+                "reference": "65651e7aee74207afa1818f9a7cea37cff71b262"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vaersaagod/matrixmate/zipball/65651e7aee74207afa1818f9a7cea37cff71b262",
+                "reference": "65651e7aee74207afa1818f9a7cea37cff71b262",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "php": "^8.0.2"
+            },
+            "require-dev": {
+                "craftcms/rector": "dev-main"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "MatrixMate",
+                "handle": "matrixmate",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/vaersaagod/matrixmate/master/CHANGELOG.md",
+                "class": "vaersaagod\\matrixmate\\MatrixMate"
+            },
+            "autoload": {
+                "psr-4": {
+                    "vaersaagod\\matrixmate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Værsågod",
+                    "homepage": "https://vaersaagod.no"
+                }
+            ],
+            "description": "Welding Matrix into shape, mate!",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "matrixmate"
+            ],
+            "support": {
+                "docs": "https://github.com/vaersaagod/matrixmate/blob/master/README.md",
+                "issues": "https://github.com/vaersaagod/matrixmate/issues",
+                "source": "https://github.com/vaersaagod/matrixmate/tree/v2.1.4"
+            },
+            "time": "2023-11-10T23:46:59+00:00"
         },
         {
             "name": "verbb/base",
