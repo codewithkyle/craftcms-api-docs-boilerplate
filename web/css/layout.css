@@ -98,6 +98,10 @@ body {
                         }
                     }
                 }
+
+                & .page-jumps {
+                    display: none;
+                }
             }
             
             & a {
@@ -109,10 +113,6 @@ body {
                 &:hover,
                 &:focus-visible {
                     color: var(--white);
-                }
-
-                & .page-jumps {
-                    display: none;
                 }
             }
         }
