@@ -23,17 +23,36 @@
         {% endif %}
     </div>
     <div>
-        <code-block class="mb-2">
+        <code-block 
+            class="mb-2"
+            x-data=""
+        >
             <h3>Request</h3>
             <h4>
                 <span method="{{ endpoint.method|upper }}">{{ endpoint.method|upper }}</span>
                 <span>{{ endpoint.route }}</span>
             </h4>
-            <source-code lang="bash">{{ endpoint.request }}</source-code>
+            <source-code x-ref="code" lang="bash">{{ endpoint.request }}</source-code>
+            <copy-button
+                x-on:click="navigator.clipboard.writeText($refs.code.innerText)"
+                style="top: calc(50px + 36px + 0.5rem);"
+            >
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" /><path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /></svg>
+                <span>Copy</span>
+            </copy-button>
         </code-block>
-        <code-block>
+        <code-block
+            x-data=""
+        >
             <h3>Response</h3>
-            <source-code lang="json">{{ endpoint.response }}</source-code>
+            <source-code x-ref="code" lang="json">{{ endpoint.response }}</source-code>
+            <copy-button
+                x-on:click="navigator.clipboard.writeText($refs.code.innerText)"
+                style="top: calc(50px + 0.5rem);"
+            >
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" /><path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /></svg>
+                <span>Copy</span>
+            </copy-button>
         </code-block>
     </div>
 </div>

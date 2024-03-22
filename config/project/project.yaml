@@ -1,4 +1,4 @@
-dateModified: 1711125271
+dateModified: 1711127029
 elementSources:
   craft\elements\Entry:
     -
@@ -89,7 +89,6 @@ meta:
     630d0468-3baf-4896-93cd-b29ddd19b6f2: Endpoints # Endpoints
     766c14db-4949-4dca-b33e-d65c21df14b8: Request # Request
     808cb1eb-e6ac-4814-b74c-5a88f2c744c0: Document # Document
-    847c6698-48e2-4700-b06f-0ea8bfa68231: Description # Description
     6994a009-5803-49ca-82a6-14950e385398: Copy # Copy
     08535bb1-52ce-4d27-9908-aa5bc8555b1f: Description # Description
     43074a37-f4ec-4832-be0a-ad3c54463f59: Common # Common

@@ -5,6 +5,47 @@ code-block {
     border: 1px solid var(--grey-800);
     overflow: hidden;
 
+    & copy-button {
+        position: absolute;
+        right: 0.5rem;
+        z-index: 1;
+        background-color: hsl(var(--grey-800-hsl) / 0.3);
+        color: var(--grey-400);
+        border-radius: 16px;
+        padding: 0 0.75rem;
+        height: 32px;
+        cursor: pointer;
+        transition: all 0.15s ease-in-out;
+        font-size: var(--font-xs);
+        font-weight: var(--font-medium);
+        display: flex;
+        align-items: center;
+        flex-flow: row nowrap;
+        visibility: hidden;
+        opacity: 0;
+        border: 1px solid transparent;
+
+        &:hover,
+        &:focus-visible{
+            background-color: var(--grey-800);
+            color: var(--white);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &:active{
+            color: var(--emerald-400);
+            background-color: hsl(var(--emerald-400-hsl) / 0.1);
+            border-color: hsl(var(--emerald-400-hsl) / 0.3);
+        }
+
+        & svg {
+            width: 14px;
+            height: 14px;
+            margin-right: 0.25rem;
+        }
+    }
+
     & h3 {
         display: block;
         height: 50px;
@@ -78,6 +119,14 @@ code-block {
         &.is-visible {
             opacity: 1;
             visibility: visible;
+        }
+
+        &:hover,
+        &:focus-within {
+            & + copy-button {
+                visibility: visible;
+                opacity: 1;
+            }
         }
 
         & pre {
