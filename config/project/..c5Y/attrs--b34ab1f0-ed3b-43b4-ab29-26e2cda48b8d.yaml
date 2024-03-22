@@ -1,0 +1,24 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 43074a37-f4ec-4832-be0a-ad3c54463f59 # Common
+handle: attrs
+instructions: null
+name: Attributes
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Add an Attribute'
+  showSiteMenu: false
+  sources:
+    - 'section:d4c91da5-7fb0-46c8-94c1-43276587afc1' # Attributes
+  targetSiteId: null
+  validateRelatedElements: true
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

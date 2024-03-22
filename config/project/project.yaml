@@ -1,4 +1,4 @@
-dateModified: 1711067081
+dateModified: 1711067162
 elementSources:
   craft\elements\Entry:
     -
@@ -126,6 +126,10 @@ plugins:
     enabled: true
     schemaVersion: 3.0.0.0
   matrixmate:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  smith:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

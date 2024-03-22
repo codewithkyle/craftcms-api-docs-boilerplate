@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0af3da7963091715009781d4b655c218",
+    "content-hash": "8941b7ae3f805f90cb5e5e81cfe0f374",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -5914,6 +5914,70 @@
                 }
             ],
             "time": "2024-03-13T23:35:14+00:00"
+        },
+        {
+            "name": "verbb/smith",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/verbb/smith.git",
+                "reference": "0d24c48d37b49de7a591c556cafb1eb3f5f2cfe4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/verbb/smith/zipball/0d24c48d37b49de7a591c556cafb1eb3f5f2cfe4",
+                "reference": "0d24c48d37b49de7a591c556cafb1eb3f5f2cfe4",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "php": "^8.0.2",
+                "verbb/base": "^2.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Smith",
+                "handle": "smith",
+                "changelogUrl": "https://raw.githubusercontent.com/verbb/smith/craft-4/CHANGELOG.md",
+                "class": "verbb\\smith\\Smith"
+            },
+            "autoload": {
+                "psr-4": {
+                    "verbb\\smith\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Verbb",
+                    "homepage": "https://verbb.io"
+                }
+            ],
+            "description": "Add copy, paste and clone functionality to Matrix blocks.",
+            "keywords": [
+                "Craft",
+                "Smith",
+                "cms",
+                "craft-plugin",
+                "craftcms"
+            ],
+            "support": {
+                "docs": "https://github.com/verbb/smith",
+                "email": "support@verbb.io",
+                "issues": "https://github.com/verbb/smith/issues?state=open",
+                "rss": "https://github.com/verbb/smith/commits/v2.atom",
+                "source": "https://github.com/verbb/smith"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/verbb",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-06-03T02:00:59+00:00"
         },
         {
             "name": "verbb/super-table",
