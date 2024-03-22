@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: navigation
+name: Navigation
+propagationMethod: all
+siteSettings:
+  342be9bc-3d31-4bbd-9df5-2b9c9a421c77: # API Docs
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 3
+  uid: 0aa4fa09-c585-48d9-bf8d-fad3b81131c3
+type: structure

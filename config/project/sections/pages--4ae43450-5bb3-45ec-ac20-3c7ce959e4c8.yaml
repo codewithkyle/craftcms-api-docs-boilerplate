@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: pages
+name: Pages
+propagationMethod: all
+siteSettings:
+  342be9bc-3d31-4bbd-9df5-2b9c9a421c77: # API Docs
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: '{slug}'
+type: channel

@@ -1,0 +1,105 @@
+field: 6e6fa4a9-95b2-4046-83e7-45112f9100ef # Content Builder
+fieldLayouts:
+  4aeae2bf-418a-4933-9571-9db7cf1ae15b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ec1511b1-1f46-424a-8220-20e77ca7f6d8 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 563ce030-c80a-4efa-9fcf-0fcbb04558fd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3f6a94d7-65f7-4920-a1b0-c9547b69d058 # Size
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 59a2546a-fba7-4752-95d2-554e50e5ab59
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6f4f5a4a-ea47-435d-8f1f-c86e2aad2d46
+        userCondition: null
+fields:
+  3f6a94d7-65f7-4920-a1b0-c9547b69d058: # Size
+    columnSuffix: fozmemgx
+    contentColumnType: string(7)
+    fieldGroup: null
+    handle: size
+    instructions: null
+    name: Size
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Large
+            -
+              - value
+              - font-xl
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Medium
+            -
+              - value
+              - font-lg
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Small
+            -
+              - value
+              - font-md
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  ec1511b1-1f46-424a-8220-20e77ca7f6d8: # Text
+    columnSuffix: oihkcmbm
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: heading
+name: Heading
+sortOrder: 1

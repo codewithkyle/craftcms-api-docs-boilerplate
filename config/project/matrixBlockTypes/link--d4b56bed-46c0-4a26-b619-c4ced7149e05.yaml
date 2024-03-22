@@ -1,0 +1,137 @@
+field: 6e6fa4a9-95b2-4046-83e7-45112f9100ef # Content Builder
+fieldLayouts:
+  4c6e54b4-ba5f-43b7-9eea-4a148d0382dd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 300641b7-dbf8-441b-bab6-25e8dafbc1ce # Label
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: acff0b47-ab41-4fdd-b0ca-861e5b26b8ab
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 808cb1eb-e6ac-4814-b74c-5a88f2c744c0 # Document
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bf0a3846-1ca8-4de4-bf13-224c5d690cda
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: f807dfab-eb24-48b7-8ee9-243d1e3cb116 # External URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ed1d64ac-4e86-40d2-8d71-5f0b55da0058
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: f45ab33e-627b-4341-b88a-3822e8a485e5 # Button Mode
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2f8e3c08-6454-47c4-b9d5-689065e4f7b0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 581470a8-d4bd-4abf-909a-37379320d558
+        userCondition: null
+fields:
+  808cb1eb-e6ac-4814-b74c-5a88f2c744c0: # Document
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: document
+    instructions: null
+    name: Document
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: 1
+      selectionLabel: 'Link Document'
+      showSiteMenu: true
+      sources:
+        - singles
+      targetSiteId: null
+      validateRelatedElements: true
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  300641b7-dbf8-441b-bab6-25e8dafbc1ce: # Label
+    columnSuffix: oxhduhed
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: null
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f45ab33e-627b-4341-b88a-3822e8a485e5: # Button Mode
+    columnSuffix: kzihgduy
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: buttonMode
+    instructions: null
+    name: 'Button Mode'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  f807dfab-eb24-48b7-8ee9-243d1e3cb116: # External URL
+    columnSuffix: wzmpwpna
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: externalUrl
+    instructions: null
+    name: 'External URL'
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: link
+name: Link
+sortOrder: 4

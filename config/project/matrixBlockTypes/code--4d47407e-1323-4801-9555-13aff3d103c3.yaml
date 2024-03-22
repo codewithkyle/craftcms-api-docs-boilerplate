@@ -1,0 +1,126 @@
+field: 6e6fa4a9-95b2-4046-83e7-45112f9100ef # Content Builder
+fieldLayouts:
+  4370c823-db12-4338-b997-a5c790d9f870:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e3016ab9-a15c-4eed-87c5-285e39b4bc52 # Description
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5ef49734-273f-4b88-aa3f-f737423b2060
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e82ee02b-f803-413b-ab3b-47c6358b6987 # Language
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56b2490b-b21a-4c06-979d-36e8186383dc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: dc0960af-d86a-44b3-b733-5f36d85aaf7a # Source
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6838b87e-2ae2-4067-a84f-990ecb54e3a5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1a30217d-2ee0-4296-ae45-55d3427828f5
+        userCondition: null
+fields:
+  dc0960af-d86a-44b3-b733-5f36d85aaf7a: # Source
+    columnSuffix: sljelblq
+    contentColumnType: text
+    fieldGroup: null
+    handle: source
+    instructions: null
+    name: Source
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: true
+      columnType: null
+      initialRows: 4
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e82ee02b-f803-413b-ab3b-47c6358b6987: # Language
+    columnSuffix: jjqgdlpt
+    contentColumnType: string(4)
+    fieldGroup: null
+    handle: lang
+    instructions: null
+    name: Language
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - JSON
+            -
+              - value
+              - json
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Bash
+            -
+              - value
+              - bash
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  e3016ab9-a15c-4eed-87c5-285e39b4bc52: # Description
+    columnSuffix: zdldizxu
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: null
+    name: Description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: code
+name: Code
+sortOrder: 5

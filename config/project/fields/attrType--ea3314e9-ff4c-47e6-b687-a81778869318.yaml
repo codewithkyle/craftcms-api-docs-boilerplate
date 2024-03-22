@@ -1,0 +1,24 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 43074a37-f4ec-4832-be0a-ad3c54463f59 # Common
+handle: attrType
+instructions: null
+name: Type
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: 1
+  selectionLabel: 'Attach Data Type'
+  showSiteMenu: false
+  sources:
+    - 'section:3c1ffc2c-34c0-445d-b181-60d4ea2082e8' # Data Types
+  targetSiteId: null
+  validateRelatedElements: true
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

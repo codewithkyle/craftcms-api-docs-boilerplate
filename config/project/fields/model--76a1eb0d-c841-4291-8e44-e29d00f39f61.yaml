@@ -1,0 +1,24 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 43074a37-f4ec-4832-be0a-ad3c54463f59 # Common
+handle: model
+instructions: null
+name: Model
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: 'Link a Model'
+  showSiteMenu: false
+  sources:
+    - 'section:ef3f6698-acc4-4e2f-8cee-9f4b9763e3f7' # Models
+  targetSiteId: null
+  validateRelatedElements: true
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

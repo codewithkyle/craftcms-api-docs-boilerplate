@@ -1,13 +1,127 @@
-dateModified: 1711051184
+dateModified: 1711066235
+elementSources:
+  craft\elements\Entry:
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: singles
+      type: native
+    -
+      key: 'section:4ae43450-5bb3-45ec-ac20-3c7ce959e4c8' # Pages
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:57ea729e-f774-4839-b91f-25e177e8491d' # Navigation
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      key: 'section:3c1ffc2c-34c0-445d-b181-60d4ea2082e8' # Data Types
+      type: native
+    -
+      key: 'section:d4c91da5-7fb0-46c8-94c1-43276587afc1' # Attributes
+      type: native
+    -
+      key: 'section:ef3f6698-acc4-4e2f-8cee-9f4b9763e3f7' # Models
+      type: native
+    -
+      key: 'section:630d0468-3baf-4896-93cd-b29ddd19b6f2' # Endpoints
+      type: native
 email:
   fromEmail: codingwithkyle@gmail.com
   fromName: 'API Docs'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0a5a1671-34f4-454d-ba37-7d78f64878f2: Default # Default
+    0c48af99-98cb-45a8-ad43-8c4ef573bf95: Copy # Copy
+    00f96a90-97e5-4fc2-840b-7ba41b0e961f: Default # Default
+    1e3692f5-bd58-4159-bdf7-a6a8dc72297a: Default # Default
+    2a76d3d5-243e-45d4-b0e8-0eeebcad8071: Method # Method
+    2b259f21-d9eb-4df7-a4b3-cd0661136e0c: Introduction # Introduction
+    3c1ffc2c-34c0-445d-b181-60d4ea2082e8: 'Data Types' # Data Types
+    3e3fab31-2146-41f5-8ddc-3dc16f7acf6a: Default # Default
+    3f6a94d7-65f7-4920-a1b0-c9547b69d058: Size # Size
+    4ae43450-5bb3-45ec-ac20-3c7ce959e4c8: Pages # Pages
+    4d47407e-1323-4801-9555-13aff3d103c3: Code # Code
+    6c3a98f5-afa2-44f6-8c21-b5592ccabcaf: Heading # Heading
+    6e6fa4a9-95b2-4046-83e7-45112f9100ef: 'Content Builder' # Content Builder
+    6e261858-b029-44bf-9126-30c95b07c345: Default # Default
+    6f75b70b-707b-4336-878b-38d71e7622a2: 'Info Bubble' # Info Bubble
+    8bb41c00-83d8-462d-8dcf-20d29ae8d103: Line # Line
+    9cc44862-caaf-4422-a3aa-6c5152b04f68: Introduction # Introduction
     48d1c729-c86d-46d1-bc0b-89ded083238b: 'API Docs' # API Docs
+    57ea729e-f774-4839-b91f-25e177e8491d: Navigation # Navigation
+    68ad52be-0e32-4692-8fd0-aea664b34e56: Response # Response
+    76a1eb0d-c841-4291-8e44-e29d00f39f61: Model # Model
+    77d42b50-b88b-4fe8-b2d8-90a82ce533a7: 'Public Schema' # Public Schema
+    148be2a9-d20b-475c-bc39-704f8328148b: Document # Document
+    302cd103-8bd6-4a27-8cd6-aa9d74e695cf: Model # Model
+    318b56b7-c9ce-4515-9b4e-9679a3de623e: Heading # Heading
     342be9bc-3d31-4bbd-9df5-2b9c9a421c77: 'API Docs' # API Docs
+    471d6c63-18de-4f5e-8b33-1c9bd74cfb4b: 'Page Jump' # Page Jump
+    541c48e6-7066-467a-b82e-35cf97c36018: Copy # Copy
+    591d6ef7-a9bc-4545-990e-cbb629ec6fa7: Simple # Simple
+    630d0468-3baf-4896-93cd-b29ddd19b6f2: Endpoints # Endpoints
+    766c14db-4949-4dca-b33e-d65c21df14b8: Request # Request
+    808cb1eb-e6ac-4814-b74c-5a88f2c744c0: Document # Document
+    6994a009-5803-49ca-82a6-14950e385398: Copy # Copy
     43074a37-f4ec-4832-be0a-ad3c54463f59: Common # Common
+    53286e64-7dcd-43e3-9291-490bfb17e03e: Endpoint # Endpoint
+    300641b7-dbf8-441b-bab6-25e8dafbc1ce: Label # Label
+    54326662-f4a4-437b-b7fd-78f20ba2837f: Nullable # Nullable
+    a2fd2914-e806-4b60-80fa-65fe0b9570dc: Group # Group
+    a4fe56d2-aaa3-468d-8b8b-620afbf8a007: Required # Required
+    ad14ea4f-2b83-4e1e-b17f-5d5f623a7203: Endpoint # Endpoint
+    b34ab1f0-ed3b-43b4-ab29-26e2cda48b8d: Attributes # Attributes
+    bdd28828-58d6-451a-a51b-9d39dfdae491: Route # Route
+    c8a5fe09-5f30-4340-a00e-dbdc8bdd35d0: Spacer # Spacer
+    d4b56bed-46c0-4a26-b619-c4ced7149e05: Link # Link
+    d4c91da5-7fb0-46c8-94c1-43276587afc1: Attributes # Attributes
+    d16ffa2e-4488-42f2-8dfb-f3b2489144c7: Model # Model
+    d599dc56-2ff5-4ff4-a4a5-2e4d68eaa6be: Parameters # Parameters
+    dc0960af-d86a-44b3-b733-5f36d85aaf7a: Source # Source
+    e6c9568f-4e6b-439c-a4d5-de411bc279eb: 'Rich Text' # Rich Text
+    e82ee02b-f803-413b-ab3b-47c6358b6987: Language # Language
+    e1433b59-67f3-4eb9-b475-e3e7d517ec85: 'Attribute Name' # Attribute Name
+    e3016ab9-a15c-4eed-87c5-285e39b4bc52: Description # Description
+    ea3314e9-ff4c-47e6-b687-a81778869318: Type # Type
+    ea9984fd-afdf-47af-9ee7-309821b7822e: Description # Description
+    ec1511b1-1f46-424a-8220-20e77ca7f6d8: Text # Text
+    ed0b9ed1-e518-4124-a845-feb55ea4d219: Space # Space
+    ef3f6698-acc4-4e2f-8cee-9f4b9763e3f7: Models # Models
+    f076fe8e-1578-4830-8ab1-36aec23bd489: Space # Space
+    f8d80a29-a9a9-40ad-9920-1c79d80cf3fc: Hash # Hash
+    f45ab33e-627b-4341-b88a-3822e8a485e5: 'Button Mode' # Button Mode
+    f807dfab-eb24-48b7-8ee9-243d1e3cb116: 'External URL' # External URL
+    ffcd89a0-af9f-49db-bd14-2093ebd1a82c: Document # Document
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
 system:
   edition: solo
   live: true

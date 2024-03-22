@@ -1,0 +1,19 @@
+columnSuffix: lodkhmgo
+contentColumnType: text
+fieldGroup: 43074a37-f4ec-4832-be0a-ad3c54463f59 # Common
+handle: attrName
+instructions: null
+name: 'Attribute Name'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: true
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

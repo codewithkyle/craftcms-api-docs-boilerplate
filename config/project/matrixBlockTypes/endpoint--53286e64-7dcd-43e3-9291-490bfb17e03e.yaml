@@ -1,0 +1,51 @@
+field: 6e6fa4a9-95b2-4046-83e7-45112f9100ef # Content Builder
+fieldLayouts:
+  dc0d8713-3df7-4006-b8dd-0a7c0aa0976f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ad14ea4f-2b83-4e1e-b17f-5d5f623a7203 # Endpoint
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2f71d8ff-4e2c-44ad-b6cf-eff7720f583e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 700918f4-581f-438b-8710-e477e52cf837
+        userCondition: null
+fields:
+  ad14ea4f-2b83-4e1e-b17f-5d5f623a7203: # Endpoint
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: endpoint
+    instructions: null
+    name: Endpoint
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: 1
+      selectionLabel: 'Attach Endpoint'
+      showSiteMenu: true
+      sources:
+        - 'section:630d0468-3baf-4896-93cd-b29ddd19b6f2' # Endpoints
+      targetSiteId: null
+      validateRelatedElements: true
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: endpoint
+name: Endpoint
+sortOrder: 7

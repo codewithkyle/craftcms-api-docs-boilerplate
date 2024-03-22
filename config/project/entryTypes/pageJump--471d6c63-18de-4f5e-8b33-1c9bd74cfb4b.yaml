@@ -1,0 +1,59 @@
+fieldLayouts:
+  7cbff843-e9a0-4c32-8db4-8775f76c12da:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 0bfa51d8-cc48-4c8d-a87c-1e0044566e88
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f8d80a29-a9a9-40ad-9920-1c79d80cf3fc # Hash
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 51fa22d1-7018-41b0-b567-40dc5b689daa
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a2e8594b-f04f-456a-b8a4-781d4cb85092
+        userCondition: null
+handle: pageJump
+hasTitleField: true
+name: 'Page Jump'
+section: 57ea729e-f774-4839-b91f-25e177e8491d # Navigation
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 3
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

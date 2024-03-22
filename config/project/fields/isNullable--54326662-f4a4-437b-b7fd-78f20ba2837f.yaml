@@ -1,0 +1,14 @@
+columnSuffix: zuuoijgk
+contentColumnType: boolean
+fieldGroup: 43074a37-f4ec-4832-be0a-ad3c54463f59 # Common
+handle: isNullable
+instructions: null
+name: Nullable
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -1,0 +1,84 @@
+field: 6e6fa4a9-95b2-4046-83e7-45112f9100ef # Content Builder
+fieldLayouts:
+  3cf86a39-99fd-4ac3-ab75-164da62f0db9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f076fe8e-1578-4830-8ab1-36aec23bd489 # Space
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0e1ef6a1-6d0f-46f1-9fb0-20ae92ac8140
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: be263444-ba13-4a11-8b84-d0bc201fe1fa
+        userCondition: null
+fields:
+  f076fe8e-1578-4830-8ab1-36aec23bd489: # Space
+    columnSuffix: sbszrjar
+    contentColumnType: string(4)
+    fieldGroup: null
+    handle: space
+    instructions: null
+    name: Space
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - None
+            -
+              - value
+              - ''
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Small
+            -
+              - value
+              - my-1
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Medium
+            -
+              - value
+              - my-2
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Large
+            -
+              - value
+              - my-4
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: line
+name: Line
+sortOrder: 6

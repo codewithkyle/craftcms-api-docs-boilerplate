@@ -1,0 +1,12 @@
+headingLevels: false
+name: Simple
+toolbar:
+  - bold
+  - italic
+  - underline
+  - code
+  - '|'
+  - bulletedList
+  - numberedList
+  - '|'
+  - link
