@@ -27,6 +27,24 @@ body {
         align-items: center;
         padding: 0 2rem;
 
+        & .divider {
+            display: inline-block;
+            height: 20px;
+            width: 1px;
+            background-color: hsl(var(--grey-200-hsl) / 0.15);
+        }
+
+        & a {
+            display: inline-block;
+            font-size: var(--font-sm);
+            transition: color 0.15s ease-in-out;
+
+            &:hover,
+            &:focus-visible {
+                color: var(--white);
+            }
+        }
+
         & .search {
             background-color: hsl(var(--white-hsl) / 0.05);
             border: 1px solid hsl(var(--grey-200-hsl) / 0.1);
