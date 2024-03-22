@@ -36,7 +36,7 @@ code-block {
         &:active{
             color: var(--emerald-400);
             background-color: hsl(var(--emerald-400-hsl) / 0.1);
-            border-color: hsl(var(--emerald-400-hsl) / 0.3);
+            border-color: hsl(var(--emerald-200-hsl) / 0.87);
         }
 
         & svg {
