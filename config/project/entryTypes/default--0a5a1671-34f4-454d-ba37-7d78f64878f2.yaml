@@ -42,7 +42,7 @@ fieldLayouts:
             uid: 3f40bd0d-42ac-4989-b3d7-f650fb859b7d
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
             fieldUid: bdd28828-58d6-451a-a51b-9d39dfdae491 # Route
@@ -54,19 +54,7 @@ fieldLayouts:
             uid: 440f171a-7a8c-4aff-9319-9614cde94266
             userCondition: null
             warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 76a1eb0d-c841-4291-8e44-e29d00f39f61 # Model
-            instructions: null
-            label: 'Related Data Model'
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 16f1bb54-89f3-47fe-abff-000472359d3d
-            userCondition: null
-            warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
             fieldUid: 318b56b7-c9ce-4515-9b4e-9679a3de623e # Heading
@@ -88,6 +76,36 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: d7bc8d98-dc21-4f21-91c3-7480a5b3a06f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8c7132a4-f1ce-4d24-9bae-a52d0416f425 # Returns
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3a7d8413-bafb-440d-847b-87d75ffaf397
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7a9aaeab-0185-422f-8a6c-45c5105c5a4b
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 76a1eb0d-c841-4291-8e44-e29d00f39f61 # Model
+            instructions: null
+            label: 'Related Data Model'
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 16f1bb54-89f3-47fe-abff-000472359d3d
             userCondition: null
             warning: null
             width: 100
@@ -115,8 +133,8 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
-        name: Content
-        uid: 7a9aaeab-0185-422f-8a6c-45c5105c5a4b
+        name: Data
+        uid: 2c33c9ca-cb58-49e9-8f31-13989328ac62
         userCondition: null
       -
         elementCondition: null

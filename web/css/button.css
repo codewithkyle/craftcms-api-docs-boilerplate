@@ -8,8 +8,8 @@
     font-size: var(--font-sm);
     font-weight: var(--font-medium);
     background-color: hsl(var(--emerald-400-hsl) / 0.1);
-    border: 1px solid hsl(var(--emerald-200-hsl) / 0.2);
     color: var(--emerald-400);
+    border: 1px solid hsl(var(--emerald-200-hsl) / 0.2);
     line-height: 1;
     cursor: pointer;
     transition: border-color 0.15s ease-in-out;
@@ -17,5 +17,18 @@
     &:hover,
     &:focus-visible {
         border-color: hsl(var(--emerald-200-hsl) / 0.87);
+    }
+
+    &.dull {
+        background-color: hsl(var(--grey-400-hsl) / 0.1);
+        border: 1px solid hsl(var(--grey-200-hsl) / 0.2);
+        color: var(--grey-400);
+
+        &:hover,
+        &:focus-visible {
+            border-color: hsl(var(--emerald-200-hsl) / 0.87);
+            background-color: hsl(var(--emerald-400-hsl) / 0.1);
+            color: var(--emerald-400);
+        }
     }
 }
