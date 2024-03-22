@@ -121,10 +121,10 @@ body {
                         content: "";
                         position: absolute;
                         width: 1px;
-                        height: 32px;
+                        height: 24px;
                         background-color: var(--emerald-400);
                         left: 0.5rem;
-                        top: 0;
+                        top: 4px;
                         position: absolute;
                         border-left: 1px solid var(--emerald-400);
                     }

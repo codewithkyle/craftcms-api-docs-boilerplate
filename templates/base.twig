@@ -92,7 +92,12 @@
                                 <div class="page-jumps">
                                     {% if child.children|length %}
                                         {% for subChild in child.children %}
-                                            <a href="#{{ subChild.hash }}" class="font-sm block">{{ subChild.title }}</a>
+                                            <a href="#{{ subChild.hash }}" class="font-sm" flex="row nowrap items-center justify-between">
+                                                <span class="inline-block">{{ subChild.title }}</span>
+                                                {% if subChild.pageJumpMethod|length %}
+                                                    <span style="font-size:10px;margin-top:4px;" class="inline-block font-bold font-grey-500">{{ subChild.pageJumpMethod|upper }}</span>
+                                                {% endif %}
+                                            </a>
                                         {% endfor %}
                                     {% endif %}
                                 </div>
