@@ -19,8 +19,49 @@
         <link rel="stylesheet" href="/css/layout.css" />
         <link rel="stylesheet" href="/css/rich-text.css" />
         <link rel="stylesheet" href="/css/button.css" />
+        <link rel="stylesheet" href="/css/info.css" />
+        <link rel="stylesheet" href="/css/hr.css" />
+        <link rel="stylesheet" href="/css/code.css" />
+
+        <style>
+            :root {
+                --shiki-color-text: #fff;
+                --shiki-token-constant: #6ee7b7;
+                --shiki-token-string: #6ee7b7;
+                --shiki-token-comment: #71717a;
+                --shiki-token-keyword: #7dd3fc;
+                --shiki-token-parameter: #f9a8d4;
+                --shiki-token-function: #c4b5fd;
+                --shiki-token-string-expression: #6ee7b7;
+                --shiki-token-punctuation: #e4e4e7;
+            }
+        </style>
 
         <script defer src="https://unpkg.com/htmx.org@1.9.11"></script>
+        <script type="module">
+            import { getHighlighter, createCssVariablesTheme } from 'https://esm.run/shiki@1.0.0';
+
+            const myTheme = createCssVariablesTheme({
+                name: 'css-variables',
+                variablePrefix: '--shiki-',
+                variableDefaults: {},
+                fontStyle: true,
+            });
+
+            const highlighter = await getHighlighter({
+                themes: [myTheme],
+                langs: ['json', 'bash'],
+            });
+            document.body.querySelectorAll('source-code').forEach(async (block) => {
+                const lang = block.getAttribute('lang');
+                if (lang !== null){
+                    block.innerHTML = highlighter.codeToHtml(block.innerHTML, {
+                        lang: 'json',
+                        theme: 'css-variables'
+                    });
+                }
+            });
+        </script>
     </head>
     <body>
         <nav hx-boost="true">
@@ -66,7 +107,7 @@
                 <button class="ml-1 bttn">Sign In</button>
             </div>
         </header>
-        <main>
+        <main class="py-4">
             <div style="z-index:-1;position: absolute; left: 50%; top: -12rem; height: 25rem; width: 81.25rem; transform: translateX(-50%);">
                 <div style="position: absolute; inset: 0; background-image: linear-gradient(white, transparent); opacity: 0.4; mask-image: radial-gradient(farthest-side at top, white, transparent); background-image: linear-gradient(to right, #36b49f, #DBFF75); opacity: 0.4; mask-image: radial-gradient(farthest-side at top, white, transparent);">
                 <svg aria-hidden="true" style="position: absolute; inset-x: 0; inset-y: -50%; height: 200%; width: 100%; transform: skewY(-18deg); fill: rgba(0,0,0,0.4); stroke: rgba(255,255,255,0.5); mix-blend-mode: overlay;">
@@ -85,9 +126,7 @@
                 </svg>
             </div>
             </div>
-            <div class="max-w-full w-1024 mx-auto px-2 py-4">
-                {% block content %}{% endblock %}
-            </div>
+            {% block content %}{% endblock %}
         </main>
     </body>
 </html>

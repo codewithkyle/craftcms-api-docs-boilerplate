@@ -1,0 +1,18 @@
+.info-bubble {
+    display: block;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1.5rem 1.5rem 1.5rem calc(2rem + 20px);
+    color: var(--emerald-200);
+    background-color: hsl(var(--emerald-400-hsl) / 0.05);
+    border: 1px solid hsl(var(--emerald-300-hsl) / 0.2);
+    font-size: var(--font-sm);
+
+    & svg {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 1.75rem;
+        left: 1rem;
+    }
+}

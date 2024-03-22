@@ -1,0 +1,31 @@
+code-block {
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid var(--grey-800);
+    overflow: hidden;
+
+    & h3 {
+        display: block;
+        height: 50px;
+        padding: 0 1rem;
+        line-height: 50px;
+        font-size: var(--font-xs);
+        font-weight: var(--font-medium);
+        background-color: hsl(var(--grey-950-hsl) / 0.15);
+        width: 100%;
+        border-bottom: 1px solid var(--grey-800);
+        color: var(--white);
+    }
+
+    & source-code {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        background-color: hsl(var(--white-hsl) / 0.025);
+
+        & pre {
+            padding: 1rem;
+        }
+    }
+}
