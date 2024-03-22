@@ -47,4 +47,4 @@ fields:
     type: craft\ckeditor\Field
 handle: info
 name: 'Info Bubble'
-sortOrder: 9
+sortOrder: 10

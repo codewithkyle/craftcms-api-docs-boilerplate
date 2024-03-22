@@ -75,6 +75,36 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 65c192b0-bfac-420f-ae24-e4279c8eff6a # Request Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3ce60811-36db-46ac-9894-e05bd4c40571
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 766c14db-4949-4dca-b33e-d65c21df14b8 # Request
+            instructions: 'An example cURL request.'
+            label: Example
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 928b3d08-e2dc-4a76-9c33-2ead82c51b56
+            userCondition: null
+            warning: null
+            width: 100
+        name: Request
+        uid: 792f6f08-0521-4a25-9d33-a9fa444a40a8
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
             fieldUid: bfbab645-8672-4ad9-a43c-6e12cc5cb5cf # Response Label
             instructions: null
             label: null
@@ -88,7 +118,7 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 68ad52be-0e32-4692-8fd0-aea664b34e56 # Response
-            instructions: null
+            instructions: 'An example JSON response.'
             label: Example
             required: true
             tip: null
@@ -97,7 +127,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Code
+        name: Response
         uid: fa6de91a-2786-447a-b65e-fb5170822ed5
         userCondition: null
 handle: default

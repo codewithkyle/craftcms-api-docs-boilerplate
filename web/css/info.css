@@ -15,4 +15,16 @@
         top: 1.75rem;
         left: 1rem;
     }
+
+    & a {
+        color: var(--white);
+        text-decoration: none;
+        transition: color 0.15s ease-in-out;
+
+        &:hover,
+        &:focus-visible {
+            color: var(--emerald-300);
+            text-decoration: underline;
+        }
+    }
 }

@@ -1,0 +1,191 @@
+field: 6e6fa4a9-95b2-4046-83e7-45112f9100ef # Content Builder
+fieldLayouts:
+  7e73dc84-5bd0-4309-93e1-0694efc157bd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 847c6698-48e2-4700-b06f-0ea8bfa68231 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89018ce9-2e9b-4d2a-a790-76c337a2d099
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9629787a-5dee-41d6-922f-230e8fb6a202 # Method
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 55b51e49-3e8c-45dc-b6ef-d53f9a39dbbc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bf5a4bc0-6714-4e23-b399-4ee2bc062193 # Route
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 26633dae-8628-42ef-85f5-5b00bd6292c0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 608c9020-a77c-4f7e-82e1-01de53506434 # Source
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3775fecd-762e-4982-a92f-9af479c10857
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 553683a2-a80f-450d-b2f2-86aa5f63ba98
+        userCondition: null
+fields:
+  608c9020-a77c-4f7e-82e1-01de53506434: # Source
+    columnSuffix: sjbbllwj
+    contentColumnType: text
+    fieldGroup: null
+    handle: source
+    instructions: null
+    name: Source
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: true
+      columnType: null
+      initialRows: 4
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  847c6698-48e2-4700-b06f-0ea8bfa68231: # Description
+    columnSuffix: xggvtyhe
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: null
+    name: Description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9629787a-5dee-41d6-922f-230e8fb6a202: # Method
+    columnSuffix: dflydkjy
+    contentColumnType: string(6)
+    fieldGroup: null
+    handle: method
+    instructions: null
+    name: Method
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - GET
+            -
+              - value
+              - get
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - POST
+            -
+              - value
+              - post
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - PUT
+            -
+              - value
+              - put
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - PATCH
+            -
+              - value
+              - patch
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - DELETE
+            -
+              - value
+              - delete
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  bf5a4bc0-6714-4e23-b399-4ee2bc062193: # Route
+    columnSuffix: tdhalfkt
+    contentColumnType: text
+    fieldGroup: null
+    handle: route
+    instructions: null
+    name: Route
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: true
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: curlRequest
+name: 'cURL Request'
+sortOrder: 6

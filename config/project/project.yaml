@@ -1,4 +1,4 @@
-dateModified: 1711078836
+dateModified: 1711123022
 elementSources:
   craft\elements\Entry:
     -
@@ -73,6 +73,7 @@ meta:
     43f5030a-2a17-47fc-aa73-f69590cbcbb6: Nullable # Nullable
     48d1c729-c86d-46d1-bc0b-89ded083238b: 'API Docs' # API Docs
     57ea729e-f774-4839-b91f-25e177e8491d: Navigation # Navigation
+    65c192b0-bfac-420f-ae24-e4279c8eff6a: 'Request Label' # Request Label
     68ad52be-0e32-4692-8fd0-aea664b34e56: Response # Response
     76a1eb0d-c841-4291-8e44-e29d00f39f61: Model # Model
     77d42b50-b88b-4fe8-b2d8-90a82ce533a7: 'Public Schema' # Public Schema
@@ -83,23 +84,28 @@ meta:
     471d6c63-18de-4f5e-8b33-1c9bd74cfb4b: 'Page Jump' # Page Jump
     541c48e6-7066-467a-b82e-35cf97c36018: Copy # Copy
     591d6ef7-a9bc-4545-990e-cbb629ec6fa7: Simple # Simple
+    608c9020-a77c-4f7e-82e1-01de53506434: Source # Source
     630d0468-3baf-4896-93cd-b29ddd19b6f2: Endpoints # Endpoints
     766c14db-4949-4dca-b33e-d65c21df14b8: Request # Request
     808cb1eb-e6ac-4814-b74c-5a88f2c744c0: Document # Document
+    847c6698-48e2-4700-b06f-0ea8bfa68231: Description # Description
     6994a009-5803-49ca-82a6-14950e385398: Copy # Copy
     08535bb1-52ce-4d27-9908-aa5bc8555b1f: Description # Description
     43074a37-f4ec-4832-be0a-ad3c54463f59: Common # Common
     53286e64-7dcd-43e3-9291-490bfb17e03e: Endpoint # Endpoint
     300641b7-dbf8-441b-bab6-25e8dafbc1ce: Label # Label
+    9629787a-5dee-41d6-922f-230e8fb6a202: Method # Method
     54326662-f4a4-437b-b7fd-78f20ba2837f: Nullable # Nullable
     a2fd2914-e806-4b60-80fa-65fe0b9570dc: Group # Group
     a4fe56d2-aaa3-468d-8b8b-620afbf8a007: Required # Required
     ad14ea4f-2b83-4e1e-b17f-5d5f623a7203: Endpoint # Endpoint
     b34ab1f0-ed3b-43b4-ab29-26e2cda48b8d: Attributes # Attributes
     bdd28828-58d6-451a-a51b-9d39dfdae491: Route # Route
+    bf5a4bc0-6714-4e23-b399-4ee2bc062193: Route # Route
     bfbab645-8672-4ad9-a43c-6e12cc5cb5cf: 'Response Label' # Response Label
     c4cc8873-9931-4003-ae88-313a02628139: Attributes # Attributes
     c8a5fe09-5f30-4340-a00e-dbdc8bdd35d0: Spacer # Spacer
+    cd37dcf3-f5e5-4837-bc90-d833555711e7: 'cURL Request' # cURL Request
     d4b56bed-46c0-4a26-b619-c4ced7149e05: Link # Link
     d4c91da5-7fb0-46c8-94c1-43276587afc1: Attributes # Attributes
     d16ffa2e-4488-42f2-8dfb-f3b2489144c7: Model # Model
@@ -146,8 +152,9 @@ system:
   edition: solo
   live: true
   name: 'API Docs'
+  retryDuration: null
   schemaVersion: 4.5.3.0
-  timeZone: America/Los_Angeles
+  timeZone: America/New_York
 users:
   allowPublicRegistration: false
   defaultGroup: null

@@ -13,7 +13,7 @@ settings:
   maxRelations: 1
   minRelations: 1
   selectionLabel: 'Link a Page'
-  showSiteMenu: false
+  showSiteMenu: true
   sources:
     - 'section:4ae43450-5bb3-45ec-ac20-3c7ce959e4c8' # Pages
     - singles

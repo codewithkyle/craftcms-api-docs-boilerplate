@@ -1,10 +1,21 @@
+{% import '_macros/attrs.twig' as attrs %}
+
 {% set model = block.model[0] %}
 <div class="w-full" grid="columns 2" style="gap:4rem;">
     <div>
         <h2 id="{{ model.heading|kebab }}" class="font-white font-md font-medium mb-0.5">{{ model.heading }}</h2>
         <rich-text class="font-sm">{{ model.copy }}</rich-text>
+        {{ attrs.list(model.attrs) }}        
     </div>
     <div>
+        {% if model.request|length %}
+            <code-block class="mb-2">
+                {% if model.requestLabel %}
+                    <h3>{{ model.requestLabel }}</h3>
+                {% endif %}
+                <source-code lang="bash">{{ model.request }}</source-code>
+            </code-block>
+        {% endif %}
         <code-block>
             <h3>{{ model.responseLabel }}</h3>
             <source-code lang="json">{{ model.response }}</source-code>

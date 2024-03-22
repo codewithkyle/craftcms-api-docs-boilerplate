@@ -48,4 +48,4 @@ fields:
     type: craft\fields\Entries
 handle: endpoint
 name: Endpoint
-sortOrder: 7
+sortOrder: 8

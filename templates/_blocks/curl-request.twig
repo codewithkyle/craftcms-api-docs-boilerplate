@@ -1,0 +1,10 @@
+<code-block>
+    {% if block.description|length %}
+        <h3>{{ block.description }}</h3>
+    {% endif %}
+    <h4>
+        <span method="{{ block.method|upper }}">{{ block.method|upper }}</span>
+        <span>{{ block.route }}</span>
+    </h4>
+    <source-code lang="bash">{{ block.source }}</source-code>
+</code-block>

@@ -1,0 +1,39 @@
+{% import '_macros/attrs.twig' as attrs %}
+
+{% set endpoint = block.endpoint[0] %}
+<div class="w-full" grid="columns 2" style="gap:4rem;">
+    <div>
+        <div flex="row nowrap items-center" class="mb-1">
+            <method-chip method="{{ endpoint.method|upper }}">{{ endpoint.method|upper }}</method-chip>
+            <span class="font-sm">{{ endpoint.route }}</span>
+        </div>
+        <h2 id="{{ endpoint.heading|kebab }}" class="font-white font-md font-medium mb-0.5">{{ endpoint.heading }}</h2>
+        <rich-text class="font-sm">{{ endpoint.copy }}</rich-text>
+        <h3 class="font-base font-white font-medium mt-2">Parameters</h3>
+        {% if endpoint.params|length %}
+            {{ attrs.list(endpoint.params) }}
+        {% else %}
+            <p class="font-sm mt-0.5">No parameters.</p>
+        {% endif %}
+        <h3 class="font-base font-white font-medium mt-2">Attributes</h3>
+        {% if endpoint.attrs|length %}
+            {{ attrs.list(endpoint.attrs) }}
+        {% else %}
+            <p class="font-sm mt-0.5">No attributes.</p>
+        {% endif %}
+    </div>
+    <div>
+        <code-block class="mb-2">
+            <h3>Request</h3>
+            <h4>
+                <span method="{{ endpoint.method|upper }}">{{ endpoint.method|upper }}</span>
+                <span>{{ endpoint.route }}</span>
+            </h4>
+            <source-code lang="bash">{{ endpoint.request }}</source-code>
+        </code-block>
+        <code-block>
+            <h3>Response</h3>
+            <source-code lang="json">{{ endpoint.response }}</source-code>
+        </code-block>
+    </div>
+</div>

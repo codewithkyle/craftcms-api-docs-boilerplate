@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="/css/info.css" />
         <link rel="stylesheet" href="/css/hr.css" />
         <link rel="stylesheet" href="/css/code.css" />
+        <link rel="stylesheet" href="/css/attr-list.css" />
+        <link rel="stylesheet" href="/css/method-chip.css" />
 
         <style>
             :root {
@@ -52,14 +54,23 @@
                 themes: [myTheme],
                 langs: ['json', 'bash'],
             });
-            document.body.querySelectorAll('source-code').forEach(async (block) => {
-                const lang = block.getAttribute('lang');
-                if (lang !== null){
-                    block.innerHTML = highlighter.codeToHtml(block.innerHTML, {
-                        lang: 'json',
-                        theme: 'css-variables'
-                    });
-                }
+
+            function highlightSourceCode() {
+                document.body.querySelectorAll('source-code').forEach(async (block) => {
+                    const lang = block.getAttribute('lang');
+                    if (lang !== null){
+                        block.innerHTML = highlighter.codeToHtml(block.innerHTML, {
+                            lang: lang,
+                            theme: 'css-variables'
+                        });
+                        block.classList.add('is-visible');
+                    }
+                });
+            }
+            highlightSourceCode();
+
+            window.addEventListener('htmx:afterSettle', () => {
+                highlightSourceCode();
             });
         </script>
     </head>

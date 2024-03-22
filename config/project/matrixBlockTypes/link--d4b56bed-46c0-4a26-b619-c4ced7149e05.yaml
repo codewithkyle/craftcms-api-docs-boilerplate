@@ -71,7 +71,7 @@ fields:
       localizeRelations: false
       maintainHierarchy: false
       maxRelations: 1
-      minRelations: 1
+      minRelations: 0
       selectionLabel: 'Link Document'
       showSiteMenu: true
       sources:

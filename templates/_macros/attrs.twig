@@ -1,0 +1,23 @@
+{% macro list(attrs) %}
+    <attribute-list>
+        {% for item in attrs %}
+            <attribute-list-item>
+                <div flex="row nowrap items-center">
+                    <code>{{ item.attrName }}</code>
+                    {% if item.isNullable %}
+                        <span>nullable</span>
+                    {% endif %}
+                    {% if item.attrType|length %}
+                        <span>{{ item.attrType[0].title|lower }}</span>
+                    {% endif %}
+                    {% if item.isRequired %}
+                        <span class="font-amber-400">required</span>
+                    {% endif %}
+                </div>
+                {% if item.description|length %}
+                    <p class="mt-0.5">{{ item.description }}</p>
+                {% endif %}
+            </attribute-list-item>
+        {% endfor %}
+    </attribute-list>
+{% endmacro %}

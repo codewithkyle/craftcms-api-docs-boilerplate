@@ -31,7 +31,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 1240391287
+      changedFieldIndicator: 1812358731
       columns:
         __assoc__:
           -
@@ -82,4 +82,4 @@ fields:
     type: verbb\supertable\fields\SuperTableField
 handle: quickAttributeList
 name: 'Quick Attribute List'
-sortOrder: 10
+sortOrder: 11

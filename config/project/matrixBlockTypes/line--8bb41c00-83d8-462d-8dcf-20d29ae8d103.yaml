@@ -81,4 +81,4 @@ fields:
     type: craft\fields\Dropdown
 handle: line
 name: Line
-sortOrder: 6
+sortOrder: 7

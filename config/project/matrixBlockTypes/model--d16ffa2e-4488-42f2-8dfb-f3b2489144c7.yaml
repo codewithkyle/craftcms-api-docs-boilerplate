@@ -48,4 +48,4 @@ fields:
     type: craft\fields\Entries
 handle: model
 name: Model
-sortOrder: 8
+sortOrder: 9

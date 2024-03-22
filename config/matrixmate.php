@@ -9,6 +9,10 @@ return [
                     'types' => ['heading', 'richText', 'link', 'code', 'info', 'quickAttributeList'],
                 ],
                 [
+                    'label' => 'Code',
+                    'types' => ['code', 'curlRequest'],
+                ],
+                [
                     'label' => 'External Content',
                     'types' => ['endpoint', 'model'],
                 ],
