@@ -39,7 +39,7 @@ fields:
               - 'Extra Small'
             -
               - value
-              - mb-0.5
+              - pb-0.5
             -
               - default
               - ''
@@ -50,7 +50,7 @@ fields:
               - Small
             -
               - value
-              - mb-1
+              - pb-1
             -
               - default
               - '1'
@@ -61,7 +61,7 @@ fields:
               - Medium
             -
               - value
-              - mb-2
+              - pb-2
             -
               - default
               - ''
@@ -72,7 +72,7 @@ fields:
               - Large
             -
               - value
-              - mb-4
+              - pb-4
             -
               - default
               - ''

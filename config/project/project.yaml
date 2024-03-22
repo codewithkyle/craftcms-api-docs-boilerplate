@@ -1,4 +1,4 @@
-dateModified: 1711067904
+dateModified: 1711074851
 elementSources:
   craft\elements\Entry:
     -
@@ -125,6 +125,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
+  eager-beaver:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   matrixmate:
     edition: standard
     enabled: true

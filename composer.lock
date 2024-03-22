@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8941b7ae3f805f90cb5e5e81cfe0f374",
+    "content-hash": "b20e9fe648ded522814a7f465214ac57",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2566,6 +2566,68 @@
                 }
             ],
             "time": "2024-03-19T20:14:01+00:00"
+        },
+        {
+            "name": "nystudio107/craft-eagerbeaver",
+            "version": "4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-eagerbeaver.git",
+                "reference": "76e91fb026e175e0ebc69a28e064ea77f85690a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-eagerbeaver/zipball/76e91fb026e175e0ebc69a28e064ea77f85690a9",
+                "reference": "76e91fb026e175e0ebc69a28e064ea77f85690a9",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Eager Beaver",
+                "handle": "eager-beaver",
+                "class": "nystudio107\\eagerbeaver\\EagerBeaver"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\eagerbeaver\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Allows you to eager load elements from auto-injected Entry elements on demand from your templates.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "eager",
+                "eager beaver",
+                "eager loading",
+                "loading"
+            ],
+            "support": {
+                "docs": "https://nystudio107.com/docs/eager-beaver/",
+                "issues": "https://nystudio107.com/plugins/eager-beaver/support",
+                "source": "https://github.com/nystudio107/craft-eagerbeaver"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/khalwat",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-08-17T15:57:58+00:00"
         },
         {
             "name": "paragonie/random_compat",

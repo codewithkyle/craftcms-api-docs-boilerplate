@@ -1,0 +1,26 @@
+rich-text {
+    display: block;
+    width: 100%;
+    position: relative;
+
+    & p {
+        display: block;
+        width: 100%;
+        margin: 1.5rem 0;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        & a {
+            color: var(--emerald-400);
+            font-weight: var(--font-medium);
+            text-decoration: none;
+
+            &:hover,
+            &:focus-visible {
+                text-decoration: underline;
+            }
+        }
+    }
+}

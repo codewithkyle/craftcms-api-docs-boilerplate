@@ -30,17 +30,21 @@ fields:
     name: Copy
     searchable: false
     settings:
-      byteLimit: null
-      charLimit: null
-      code: false
-      columnType: null
-      initialRows: 4
-      multiline: true
-      placeholder: null
-      uiMode: normal
+      availableTransforms: ''
+      availableVolumes: ''
+      ckeConfig: 591d6ef7-a9bc-4545-990e-cbb629ec6fa7 # Simple
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\PlainText
+    type: craft\ckeditor\Field
 handle: info
 name: 'Info Bubble'
 sortOrder: 9
