@@ -1,4 +1,4 @@
-dateModified: 1711066235
+dateModified: 1711066454
 elementSources:
   craft\elements\Entry:
     -
@@ -31,7 +31,7 @@ elementSources:
         - link
       type: native
     -
-      heading: Channels
+      heading: Data
       type: heading
     -
       key: 'section:3c1ffc2c-34c0-445d-b181-60d4ea2082e8' # Data Types
