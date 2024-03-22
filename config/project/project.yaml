@@ -1,4 +1,4 @@
-dateModified: 1711138637
+dateModified: 1711139811
 elementSources:
   craft\elements\Entry:
     -
@@ -93,6 +93,7 @@ meta:
     6994a009-5803-49ca-82a6-14950e385398: Copy # Copy
     08535bb1-52ce-4d27-9908-aa5bc8555b1f: Description # Description
     43074a37-f4ec-4832-be0a-ad3c54463f59: Common # Common
+    50384c13-4549-4cc5-9347-8f3518d5a786: Codes # Codes
     53286e64-7dcd-43e3-9291-490bfb17e03e: Endpoint # Endpoint
     300641b7-dbf8-441b-bab6-25e8dafbc1ce: Label # Label
     9629787a-5dee-41d6-922f-230e8fb6a202: Method # Method
@@ -111,6 +112,7 @@ meta:
     d4c91da5-7fb0-46c8-94c1-43276587afc1: Attributes # Attributes
     d16ffa2e-4488-42f2-8dfb-f3b2489144c7: Model # Model
     d599dc56-2ff5-4ff4-a4a5-2e4d68eaa6be: Parameters # Parameters
+    d4872f23-314a-4203-bcaf-7327ae9a3cc5: 'HTTP Response Codes' # HTTP Response Codes
     dae6d34d-9d8e-405c-9bae-828a53bfaae3: Required # Required
     db573abc-435e-4936-bc53-6a2c534407cf: 'Attribute Type' # Attribute Type
     dc0960af-d86a-44b3-b733-5f36d85aaf7a: Source # Source

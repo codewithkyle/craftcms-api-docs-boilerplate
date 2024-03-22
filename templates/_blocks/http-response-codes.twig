@@ -1,0 +1,10 @@
+<http-codes class="table">
+    <h3>HTTP Status Code</h3>
+    <http-codes-table>
+        {% for row in block.codes %}
+            <strong>{{ row.code }}</strong>
+            <span>{{ row.label }}</span>
+            <span>{{ row.description }}</span>
+        {% endfor %}
+    </http-codes-table>
+</http-codes>

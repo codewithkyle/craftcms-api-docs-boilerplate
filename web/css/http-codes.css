@@ -1,0 +1,25 @@
+http-codes {
+    display: block;
+    width: 100%;
+    background-color: hsl(var(--white-hsl) / 0.01);
+    border-radius: 0.5rem;
+    border: 1px solid var(--grey-800);
+
+    & h3 {
+        font-size: var(--font-sm);
+        font-weight: var(--font-medium);
+        color: var(--white);
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid var(--grey-800);
+        background-color: hsl(var(--grey-950-hsl) / 0.15);
+    }
+
+    & http-codes-table {
+        padding: 0.5rem 0.75rem;
+        display: grid;
+        grid-template-columns: 64px 128px 1fr;
+        gap: 0.5rem;
+        font-size: var(--font-sm);
+        item-align: center;
+    }
+}

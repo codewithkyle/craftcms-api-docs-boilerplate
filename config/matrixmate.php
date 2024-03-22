@@ -10,7 +10,7 @@ return [
                 ],
                 [
                     'label' => 'Code',
-                    'types' => ['code', 'curlRequest'],
+                    'types' => ['code', 'curlRequest', 'httpResponseCodes'],
                 ],
                 [
                     'label' => 'External Content',
