@@ -22,5 +22,6 @@ http-codes {
         gap: 0.5rem;
         font-size: var(--font-sm);
         item-align: center;
+        font-family: var(--font-mono);
     }
 }
