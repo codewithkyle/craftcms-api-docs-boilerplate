@@ -212,16 +212,20 @@ body {
                         border-radius: 0.5rem;
                     }
 
-                    &::after{
-                        content: "";
-                        position: absolute;
-                        width: 1px;
-                        height: 24px;
-                        background-color: var(--emerald-400);
-                        left: 0.5rem;
-                        top: 4px;
-                        position: absolute;
-                        border-left: 1px solid var(--emerald-400);
+                    & nav-observer {
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 1px;
+                            height: 24px;
+                            background-color: var(--emerald-400);
+                            left: 0.5rem;
+                            top: 4px;
+                            transform: translateY(var(--line-offset));
+                            position: absolute;
+                            border-left: 1px solid var(--emerald-400);
+                            transition: transform 0.15s ease-in-out;
+                        }
                     }
 
                     & > a {

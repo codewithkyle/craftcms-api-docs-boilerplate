@@ -77,6 +77,9 @@
                 highlightSourceCode();
             });
         </script>
+
+        <script defer src="/js/heading-observer.js"></script>
+        <script defer src="/js/nav-observer.js"></script>
     </head>
     <body>
         <nav 
@@ -96,20 +99,26 @@
                     <ul class="mb-1.5">
                         {% for child in children %}
                             {% set isCurrentPage = page.id == child.document[0].id %}
-                            <li class="{{ isCurrentPage ? 'is-active' : ''}}">
-                                <a href="/{{ child.document[0].slug }}" class="font-sm block">{{ child.title }}</a>
-                                <div class="page-jumps">
-                                    {% if child.children|length %}
-                                        {% for subChild in child.children %}
-                                            <a href="#{{ subChild.hash }}" class="font-sm" flex="row nowrap items-center justify-between">
-                                                <span class="inline-block">{{ subChild.title }}</span>
-                                                {% if subChild.pageJumpMethod|length %}
-                                                    <span style="font-size:10px;margin-top:4px;" class="inline-block font-bold font-grey-500">{{ subChild.pageJumpMethod|upper }}</span>
-                                                {% endif %}
-                                            </a>
-                                        {% endfor %}
-                                    {% endif %}
-                                </div>
+                            <li 
+                                class="{{ isCurrentPage ? 'is-active' : ''}}"
+                                x-data=""
+                                x-on:observed.window="console.log($event.detail.id)"
+                            >
+                                <nav-observer class="block w-full" style="--line-offset: 0px;">
+                                    <a href="/{{ child.document[0].slug }}" class="font-sm block">{{ child.title }}</a>
+                                    <div class="page-jumps">
+                                        {% if child.children|length %}
+                                            {% for subChild in child.children %}
+                                                <a href="#{{ subChild.hash }}" class="font-sm" flex="row nowrap items-center justify-between">
+                                                    <span class="inline-block">{{ subChild.title }}</span>
+                                                    {% if subChild.pageJumpMethod|length %}
+                                                        <span style="font-size:10px;margin-top:4px;" class="inline-block font-bold font-grey-500">{{ subChild.pageJumpMethod|upper }}</span>
+                                                    {% endif %}
+                                                </a>
+                                            {% endfor %}
+                                        {% endif %}
+                                    </div>
+                                </nav-observer>
                             </li>
                         {% endfor %}
                     </ul>

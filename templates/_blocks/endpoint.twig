@@ -7,7 +7,9 @@
             <method-chip method="{{ endpoint.method|upper }}">{{ endpoint.method|upper }}</method-chip>
             <span style="font-style: italic;" class="font-xs font-mono">{{ endpoint.route }}</span>
         </div>
-        <h2 id="{{ endpoint.heading|kebab }}" class="font-white font-md font-medium mb-0.5">{{ endpoint.heading }}</h2>
+        <heading-observer class="block w-full">
+            <h2 id="{{ endpoint.heading|kebab }}" class="font-white font-md font-medium mb-0.5">{{ endpoint.heading }}</h2>
+        </heading-observer>
         <rich-text class="font-sm">{{ endpoint.copy }}</rich-text>
         <h3 class="font-base font-white font-medium mt-2">Parameters</h3>
         {% if endpoint.params|length %}
