@@ -31,9 +31,11 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 0 1rem;
+        transition: background-color 0.3s var(--ease-out);
 
         &.open {
             background-color: hsl(var(--grey-900-hsl) / 0.8);
+            transition: background-color 0.3s var(--ease-in);
         }
 
         @media (min-width: 1024px) {
@@ -155,12 +157,13 @@ body {
         background-color: hsl(var(--grey-900-hsl) / 0.8);
         z-index: 1000;
         transform: translateX(-100%);
-        transition: transform 0.3s var(--ease-in);
+        transition: transform 0.3s var(--ease-out), visibility 0s 0.4s linear;
         visibility: hidden;
 
         &.open {
             transform: translateX(0);
             visibility: visible;
+            transition: transform 0.3s var(--ease-in);
         }
 
         @media (min-width: 1024px) {
