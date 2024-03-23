@@ -43,6 +43,25 @@ class App extends BaseModule
     {
         // Register event handlers here ...
         // (see https://craftcms.com/docs/4.x/extend/events.html to get started)
+        
+        Event::on(Elements::class, Elements::EVENT_BEFORE_SAVE_ELEMENT, function (ElementEvent $event)
+        {
+            if (!empty($event->element->url) && !$event->element->isDraft && !$event->element->isRevision)
+            {
+                try
+                {
+                    $entry = $event->element;
+                    $client = new Client(getenv('MEILISEARCH_HOST'), getenv('MEILISEARCH_MASTER_KEY'));
+                    $index = $client->index('pages');
+                    $index->updateFilterableAttributes(['entry']);
+                    $index->deleteDocuments([ 'filter' => 'entry = ' . $entry->id ]);
+                }
+                catch (\Exception $e)
+                {
+					Craft::error($e->getMessage(), __METHOD__);
+				}
+			}
+        });
 
         Event::on(Elements::class, Elements::EVENT_AFTER_SAVE_ELEMENT, function (ElementEvent $event)
         {
@@ -66,6 +85,7 @@ class App extends BaseModule
                                     'url' => $entry->url . "#" . StringHelper::toKebabCase($block->text),
                                     'content' => $block->text,
                                     'nav' => $groupEntry->title . ' / ' . $navigationEntry->title,
+                                    'entry' => $entry->id,
                                 ];
                                 break;
                             case 'endpoint':
@@ -77,6 +97,7 @@ class App extends BaseModule
                                     'content' => $endpoint->copy,
                                     'endpoint' => $endpoint->title,
                                     'nav' => $groupEntry->title . ' / ' . $navigationEntry->title,
+                                    'entry' => $entry->id,
                                 ];
                                 break;
                             case 'model':
@@ -87,6 +108,7 @@ class App extends BaseModule
                                     'url' => $entry->url . "#" . StringHelper::toKebabCase($model->heading),
                                     'content' => $model->copy,
                                     'nav' => $groupEntry->title . ' / ' . $navigationEntry->title,
+                                    'entry' => $entry->id,
                                 ];
                                 break;
                             default:
