@@ -68,7 +68,6 @@ code-block {
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-        padding-top: 0.25rem;
 
         & span {
             position: relative;
@@ -89,7 +88,7 @@ code-block {
                     background-color: var(--grey-500);
                     position: absolute;
                     right: -2px;
-                    top: 40%;
+                    top: 50%;
                     transform: translateY(-50%);
                 }
             }
