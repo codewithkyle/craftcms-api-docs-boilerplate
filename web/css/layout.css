@@ -39,6 +39,7 @@ body {
         @media (min-width: 1024px) {
             max-width: calc(100vw - 320px);
             padding: 0 4rem;
+            background-color: hsl(var(--grey-900-hsl) / 0.2) !important;
         }
 
         & .divider {
@@ -163,7 +164,6 @@ body {
         }
 
         @media (min-width: 1024px) {
-            position: relative;
             height: 100vh;
             top: 0;
             transform: translateX(0) !important;
