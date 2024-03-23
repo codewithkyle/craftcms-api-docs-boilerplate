@@ -1,4 +1,4 @@
-changedFieldIndicator: 2058918247
+changedFieldIndicator: 1865941347
 field: c4cc8873-9931-4003-ae88-313a02628139 # Attributes
 fieldLayouts:
   323bd9b8-4b67-4139-9466-185a4eb318f8:
@@ -114,17 +114,21 @@ fields:
     name: Description
     searchable: false
     settings:
-      byteLimit: null
-      charLimit: null
-      code: false
-      columnType: null
-      initialRows: 2
-      multiline: false
-      placeholder: null
-      uiMode: normal
+      availableTransforms: ''
+      availableVolumes: ''
+      ckeConfig: 85eefa55-3764-4be1-baa1-3ca9a7b50c8f # Description
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\PlainText
+    type: craft\ckeditor\Field
   dae6d34d-9d8e-405c-9bae-828a53bfaae3: # Required
     columnSuffix: tjjpqwbw
     contentColumnType: boolean

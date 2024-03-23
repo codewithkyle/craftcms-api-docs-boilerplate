@@ -1,0 +1,9 @@
+headingLevels: false
+name: Description
+toolbar:
+  - bold
+  - italic
+  - underline
+  - code
+  - '|'
+  - link
