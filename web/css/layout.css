@@ -1,9 +1,13 @@
+:root {
+    --font-mono: 'Operator Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
 html {
     font-size: 100%;
 }
 body {
     color: var(--grey-400);
-    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-family: 'Motiva Sans', ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     line-height: 1.618;
     background-color: rgb(24, 24, 27);
     width: 100%;

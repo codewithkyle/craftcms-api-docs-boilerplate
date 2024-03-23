@@ -61,10 +61,14 @@ code-block {
 
     & h4 {
         height: 36px;
-        line-height: 36px;
+        line-height: 1;
         padding: 0 1rem;
         border-bottom: 1px solid var(--grey-800);
         background-color: hsl(var(--white-hsl) / 0.03);
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        padding-top: 0.25rem;
 
         & span {
             position: relative;
@@ -84,7 +88,7 @@ code-block {
                     border-radius: 50%;
                     background-color: var(--grey-500);
                     position: absolute;
-                    right: -4px;
+                    right: -2px;
                     top: 40%;
                     transform: translateY(-50%);
                 }
@@ -131,6 +135,11 @@ code-block {
 
         & pre {
             padding: 1rem;
+
+            & code {
+                font-family: var(--font-mono);
+                font-size: 12px;
+            }
         }
     }
 }

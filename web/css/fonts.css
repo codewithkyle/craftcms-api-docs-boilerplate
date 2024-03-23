@@ -1,0 +1,66 @@
+/* Motiva Sans */
+@font-face {
+    font-family: 'Motiva Sans';
+    src: url('/fonts/MotivaSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Motiva Sans';
+    src: url('/fonts/MotivaSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Motiva Sans';
+    src: url('/fonts/MotivaSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Motiva Sans';
+    src: url('/fonts/MotivaSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Motiva Sans';
+    src: url('/fonts/MotivaSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Motiva Sans';
+    src: url('/fonts/MotivaSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Motiva Sans';
+    src: url('/fonts/MotivaSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Operator Mono */
+@font-face {
+    font-family: 'Operator Mono';
+    src: url('/fonts/OperatorMono-Book.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Operator Mono';
+    src: url('/fonts/OperatorMono-BookItalic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
