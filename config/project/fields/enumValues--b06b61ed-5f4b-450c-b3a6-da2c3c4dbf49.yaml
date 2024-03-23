@@ -1,0 +1,51 @@
+columnSuffix: ejlfdnlv
+contentColumnType: text
+fieldGroup: 43074a37-f4ec-4832-be0a-ad3c54463f59 # Common
+handle: enumValues
+instructions: null
+name: 'Enum values'
+searchable: false
+settings:
+  addRowLabel: 'Add an enum value'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Value
+            -
+              - handle
+              - value
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Description
+            -
+              - handle
+              - description
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+  defaults: null
+  maxRows: null
+  minRows: null
+  staticRows: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

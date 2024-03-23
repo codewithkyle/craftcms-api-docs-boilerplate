@@ -17,6 +17,19 @@
                 {% if item.description|length %}
                     <rich-text class="mt-0.5">{{ item.description }}</rich-text>
                 {% endif %}
+                {% if item.enumValues|length %}
+                    <enum-values class="mt-0.5">
+                        <h3>Possible enum values</h3>
+                        <enums-table>
+                            {% for row in item.enumValues %}
+                                <div>
+                                    <code>{{ row.value }}</code>
+                                    <span>{{ row.description }}</span>
+                                </div>
+                            {% endfor %}
+                        </enums-table>
+                    </enum-values>
+                {% endif %}
                 {% if item.attrs|length %}
                     <div
                         x-data="{ open: false }"

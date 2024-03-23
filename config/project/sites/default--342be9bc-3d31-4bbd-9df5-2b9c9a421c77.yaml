@@ -1,4 +1,4 @@
-baseUrl: 'http://apidocs.local/'
+baseUrl: $PRIMARY_SITE_URL
 enabled: true
 handle: default
 hasUrls: true

@@ -99,18 +99,6 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 76a1eb0d-c841-4291-8e44-e29d00f39f61 # Model
-            instructions: null
-            label: 'Related Data Model'
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 16f1bb54-89f3-47fe-abff-000472359d3d
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: d599dc56-2ff5-4ff4-a4a5-2e4d68eaa6be # Parameters
             instructions: null
             label: null
@@ -144,7 +132,7 @@ fieldLayouts:
             fieldUid: 766c14db-4949-4dca-b33e-d65c21df14b8 # Request
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 876bf618-fe64-4f6b-a526-2a4184652b48

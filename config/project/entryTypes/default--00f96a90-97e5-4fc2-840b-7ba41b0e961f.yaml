@@ -93,6 +93,18 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
+            fieldUid: b06b61ed-5f4b-450c-b3a6-da2c3c4dbf49 # Enum values
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5621f0e9-6e3c-4e10-85a0-af145d691c48
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: b34ab1f0-ed3b-43b4-ab29-26e2cda48b8d # Attributes
             instructions: null
             label: 'Child Attributes'

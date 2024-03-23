@@ -1,4 +1,4 @@
-dateModified: 1711200629
+dateModified: 1711211254
 elementSources:
   craft\elements\Entry:
     -
@@ -14,10 +14,26 @@ elementSources:
         - link
       type: native
     -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
       key: singles
+      tableAttributes:
+        - dateCreated
+        - dateUpdated
+        - link
       type: native
     -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
       key: 'section:4ae43450-5bb3-45ec-ac20-3c7ce959e4c8' # Pages
+      tableAttributes:
+        - dateCreated
+        - dateUpdated
+        - link
       type: native
     -
       defaultSort:
@@ -26,24 +42,47 @@ elementSources:
       disabled: false
       key: 'section:57ea729e-f774-4839-b91f-25e177e8491d' # Navigation
       tableAttributes:
-        - postDate
-        - expiryDate
-        - link
+        - type
+        - 'field:f8d80a29-a9a9-40ad-9920-1c79d80cf3fc' # Hash
+        - 'field:56a62ed8-7abe-4da2-b0cf-c1f02378261e' # Page Jump Method
       type: native
     -
       heading: Data
       type: heading
     -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
       key: 'section:3c1ffc2c-34c0-445d-b181-60d4ea2082e8' # Data Types
+      tableAttributes: '-'
       type: native
     -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
       key: 'section:d4c91da5-7fb0-46c8-94c1-43276587afc1' # Attributes
+      tableAttributes:
+        - 'field:ea9984fd-afdf-47af-9ee7-309821b7822e' # Description
       type: native
     -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
       key: 'section:ef3f6698-acc4-4e2f-8cee-9f4b9763e3f7' # Models
+      tableAttributes: '-'
       type: native
     -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
       key: 'section:630d0468-3baf-4896-93cd-b29ddd19b6f2' # Endpoints
+      tableAttributes:
+        - 'field:318b56b7-c9ce-4515-9b4e-9679a3de623e' # Heading
+        - 'field:8c7132a4-f1ce-4d24-9bae-a52d0416f425' # Returns
       type: native
 email:
   fromEmail: codingwithkyle@gmail.com
@@ -102,6 +141,7 @@ meta:
     a2fd2914-e806-4b60-80fa-65fe0b9570dc: Group # Group
     a4fe56d2-aaa3-468d-8b8b-620afbf8a007: Required # Required
     ad14ea4f-2b83-4e1e-b17f-5d5f623a7203: Endpoint # Endpoint
+    b06b61ed-5f4b-450c-b3a6-da2c3c4dbf49: 'Enum values' # Enum values
     b34ab1f0-ed3b-43b4-ab29-26e2cda48b8d: Attributes # Attributes
     bdd28828-58d6-451a-a51b-9d39dfdae491: Route # Route
     bf5a4bc0-6714-4e23-b399-4ee2bc062193: Route # Route
