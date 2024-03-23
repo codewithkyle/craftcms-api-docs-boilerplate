@@ -63,7 +63,7 @@ attribute-list{
             & enums-table {
                 display: block;
                 width: 100%;
-                font-size: var(--font-sm);
+                font-size: var(--font-xs);
 
                 & > div {
                     border-bottom: 1px solid var(--grey-800);

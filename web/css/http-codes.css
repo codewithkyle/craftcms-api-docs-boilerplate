@@ -20,7 +20,7 @@ http-codes {
         display: grid;
         grid-template-columns: 64px 128px 1fr;
         gap: 0.5rem;
-        font-size: var(--font-sm);
+        font-size: var(--font-xs);
         item-align: center;
         font-family: var(--font-mono);
     }

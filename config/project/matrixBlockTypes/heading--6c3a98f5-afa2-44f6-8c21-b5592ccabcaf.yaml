@@ -35,7 +35,7 @@ fieldLayouts:
 fields:
   3f6a94d7-65f7-4920-a1b0-c9547b69d058: # Size
     columnSuffix: fozmemgx
-    contentColumnType: string(7)
+    contentColumnType: string(19)
     fieldGroup: null
     handle: size
     instructions: null
@@ -51,7 +51,7 @@ fields:
               - Large
             -
               - value
-              - font-xl
+              - 'font-xl font-bold'
             -
               - default
               - ''
@@ -62,7 +62,7 @@ fields:
               - Medium
             -
               - value
-              - font-lg
+              - 'font-lg font-medium'
             -
               - default
               - '1'
@@ -73,7 +73,7 @@ fields:
               - Small
             -
               - value
-              - font-md
+              - 'font-md font-medium'
             -
               - default
               - ''
