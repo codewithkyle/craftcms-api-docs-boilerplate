@@ -63,7 +63,7 @@ body {
                 color: var(--white);
             }
 
-            @media (min-width: 1400px) {
+            @media (min-width: 1200px) {
                 display: inline-block;
             }
         }
