@@ -30,4 +30,5 @@ return GeneralConfig::create()
     ->aliases([
         '@webroot' => dirname(__DIR__) . '/web',
     ])
+    ->useEmailAsUsername(true)
 ;
